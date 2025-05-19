@@ -31,8 +31,8 @@ print_error() {
 setup_directories() {
     print_info "URL 분류 시스템 환경 설정을 시작합니다..."
     
-    # 기본 디렉토리 경로 설정
-    BASE_DIR="$HOME/url_classifier"
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    BASE_DIR="$SCRIPT_DIR"
     print_info "기본 디렉토리: $BASE_DIR"
     
     # 필요한 디렉토리 목록
