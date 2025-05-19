@@ -255,7 +255,7 @@ main() {
     echo ""
     print_info "다음 단계:"
     echo "1. 모델 파일이 없는 경우 ~/url_classifier/model/ 디렉토리에 모델 파일을 복사하세요."
-    echo "   예시: cp /path/to/catboost_url_model.cbm ~/url_classifier/model/"
+    echo "huggingface!!"
     echo ""
     echo "2. Docker Compose로 컨테이너를 시작하세요."
     echo "   명령어: cd ~/url_classifier && sudo docker-compose up -d"
