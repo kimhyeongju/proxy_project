@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  # URL 분류 서비스 (Flask API 및 프록시 서버)
+  url-classifier:
+    image: hyeongju6/url-classifier:v1
+    container_name: url-classifier
+    ports:
+      - "8888:8888"  # 프록시 서버 포트
+      - "5000:5000"  # Flask API 포트
+    volumes:
+      - ./logs:/app/logs  # 로그 디렉토리 마운트
+      - ./model:/app/model  # 모델 디렉토리 마운트
+    environment:
+      - LOG_DIR=/app/logs
+    restart: unless-stopped
+    networks:
+      - url-classifier-net
+
+  # Suricata IDS/IPS 서비스
+  suricata:
+    image: hyeongju6/url-suricata:v1
+    container_name: suricata
+    # 호스트 네트워크 모드 사용 (네트워크 트래픽 직접 모니터링 위함)
+    network_mode: host
+    cap_add:
+      - NET_ADMIN  # 네트워크 관리 권한
+      - NET_RAW    # RAW 소켓 권한
+      - SYS_NICE   # 프로세스 우선순위 설정 권한
+    volumes:
+      - ./suricata_logs:/var/log/suricata  # Suricata 로그 디렉토리 마운트
+      - ./suricata_rules:/etc/suricata/rules  # Suricata 규칙 디렉토리 마운트
+      - ./blocked_urls:/var/log/url_blocker  # 차단된 URL 로그 마운트
+    environment:
+      - FLASK_SERVER_URL=http://192.168.100.132:5000/predict  # Flask 서버 URL 설정
+      - LOG_DIR=/var/log/url_blocker
+    restart: unless-stopped
+    depends_on:
+      - url-classifier
+
+networks:
+  url-classifier-net:
+    driver: bridge
