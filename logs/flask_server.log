@@ -1,0 +1,129 @@
+2025-05-16 08:36:40,276 - url_classifier - INFO - CatBoost 모델 로드 성공
+2025-05-16 08:36:40,276 - url_classifier - INFO - Flask 애플리케이션 시작
+2025-05-16 08:36:40,280 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+2025-05-16 08:36:40,280 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-16 08:36:42,217 - url_classifier - INFO - CatBoost 모델 로드 성공
+2025-05-16 08:36:42,217 - url_classifier - INFO - Flask 애플리케이션 시작
+2025-05-16 08:37:08,816 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:37:08] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:37:38,883 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:37:38] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:38:08,949 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:38:08] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:38:39,008 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:38:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:39:09,068 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:39:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:39:39,131 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:39:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:40:09,184 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:40:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:40:26,821 - url_classifier - INFO - URL 분석: r11.o.lencr.org - 악성 확률: 0.0000
+2025-05-16 08:40:26,822 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:40:26] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:40:26,938 - url_classifier - INFO - URL 분석: r10.o.lencr.org - 악성 확률: 0.0001
+2025-05-16 08:40:26,939 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:40:26] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:40:39,240 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:40:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:41:09,309 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:41:14,676 - url_classifier - INFO - URL 분석: open24.ie-news.irish/online/Login - 악성 확률: 0.9842
+2025-05-16 08:41:14,677 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:14] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:15,074 - url_classifier - INFO - URL 분석: open24.ie-news.irish/favicon.ico - 악성 확률: 0.7851
+2025-05-16 08:41:15,075 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:15] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:21,767 - url_classifier - INFO - URL 분석: nationalfinance.co.om - 악성 확률: 0.0035
+2025-05-16 08:41:21,767 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:21] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:24,974 - url_classifier - INFO - URL 분석: nationalfinance.co.om/favicon.ico - 악성 확률: 0.9978
+2025-05-16 08:41:24,975 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:24] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:33,607 - url_classifier - INFO - URL 분석: microsoft.ltda - 악성 확률: 0.0314
+2025-05-16 08:41:33,607 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:33] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:35,921 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:35,921 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:35] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:36,131 - url_classifier - INFO - URL 분석: oneocsp.microsoft.com/ocsp - 악성 확률: 0.6410
+2025-05-16 08:41:36,131 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:36] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:36,814 - url_classifier - INFO - URL 분석: ocsp.r2m03.amazontrust.com - 악성 확률: 0.0027
+2025-05-16 08:41:36,815 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:36] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:36,881 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:36,882 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:36] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,434 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:37,434 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,681 - url_classifier - INFO - URL 분석: r10.o.lencr.org - 악성 확률: 0.0001
+2025-05-16 08:41:37,681 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,813 - url_classifier - INFO - URL 분석: r11.o.lencr.org - 악성 확률: 0.0000
+2025-05-16 08:41:37,813 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,838 - url_classifier - INFO - URL 분석: r11.o.lencr.org - 악성 확률: 0.0000
+2025-05-16 08:41:37,839 - url_classifier - INFO - URL 분석: r11.o.lencr.org - 악성 확률: 0.0000
+2025-05-16 08:41:37,839 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,839 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,842 - url_classifier - INFO - URL 분석: r11.o.lencr.org - 악성 확률: 0.0000
+2025-05-16 08:41:37,843 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,908 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:37,909 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:37,914 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:37,915 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:37] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:38,108 - url_classifier - INFO - URL 분석: r10.o.lencr.org - 악성 확률: 0.0001
+2025-05-16 08:41:38,109 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:38] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:38,754 - url_classifier - INFO - URL 분석: r11.o.lencr.org - 악성 확률: 0.0000
+2025-05-16 08:41:38,754 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:38] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:39,365 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:41:39,970 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:39,970 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:39] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:41,060 - url_classifier - INFO - URL 분석: google.com - 악성 확률: 0.0277
+2025-05-16 08:41:41,060 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:41] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:41,315 - url_classifier - INFO - URL 분석: www.google.com - 악성 확률: 0.0014
+2025-05-16 08:41:41,315 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:41] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:42,370 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:42,370 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:42] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:42,481 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:42,481 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:42] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:43,077 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:43,078 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:43] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:43,078 - url_classifier - INFO - URL 분석: o.pki.goog/wr2 - 악성 확률: 0.9905
+2025-05-16 08:41:43,079 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:43] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:48,091 - url_classifier - INFO - URL 분석: ps.com.vu/wp-config/wp-incluides/soft/ursnbxmmvd - 악성 확률: 0.9850
+2025-05-16 08:41:48,091 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:48] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:48,135 - url_classifier - INFO - URL 분석: ps.com.vu/favicon.ico - 악성 확률: 1.0000
+2025-05-16 08:41:48,136 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:48] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:41:56,680 - url_classifier - INFO - URL 분석: town.ozora.hokkaido.jp - 악성 확률: 0.0340
+2025-05-16 08:41:56,680 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:41:56] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:42:04,930 - url_classifier - INFO - URL 분석: town.ozora.hokkaido.jp/favicon.ico - 악성 확률: 0.9909
+2025-05-16 08:42:04,931 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:42:04] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:42:09,424 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:42:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:42:39,499 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:42:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:42:49,734 - url_classifier - INFO - URL 분석: town.ozora.hokkaido.jp - 악성 확률: 0.0340
+2025-05-16 08:42:49,734 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:42:49] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:43:01,623 - url_classifier - INFO - URL 분석: open24.ie-news.irish/online/Login - 악성 확률: 0.9842
+2025-05-16 08:43:01,624 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:43:01] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:43:09,564 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:43:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:43:25,398 - url_classifier - INFO - URL 분석: musikcity.mus.br/lojas/ipiranga.html - 악성 확률: 0.1950
+2025-05-16 08:43:25,399 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:43:25] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:43:39,620 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:43:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:44:09,687 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:44:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:44:39,764 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:44:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:44:58,516 - url_classifier - INFO - URL 분석: town.ozora.hokkaido.jp - 악성 확률: 0.0340
+2025-05-16 08:44:58,516 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:44:58] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:45:09,133 - url_classifier - INFO - URL 분석: nationalfinance.co.om - 악성 확률: 0.0035
+2025-05-16 08:45:09,134 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:45:09] "POST /predict HTTP/1.1" 200 -
+2025-05-16 08:45:09,825 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:45:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:45:39,891 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:45:39] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:46:09,953 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:46:09] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:46:40,020 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:46:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:47:10,101 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:47:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:47:40,171 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:47:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:48:10,239 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:48:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:48:40,301 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:48:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:49:10,370 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:49:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:49:40,440 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:49:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:50:10,496 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:50:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:50:40,572 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:50:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:51:10,645 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:51:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:51:40,709 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:51:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:52:10,772 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:52:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:52:40,844 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:52:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:53:10,915 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:53:10] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:53:40,985 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:53:40] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:54:11,045 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:54:11] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:54:41,121 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:54:41] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:55:11,188 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:55:11] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:55:41,263 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:55:41] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:56:11,329 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:56:11] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:56:41,388 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:56:41] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:57:11,456 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:57:11] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:57:41,536 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:57:41] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:58:11,600 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:58:11] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:58:41,667 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:58:41] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:59:11,751 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:59:11] "GET /health HTTP/1.1" 200 -
+2025-05-16 08:59:41,828 - werkzeug - INFO - 127.0.0.1 - - [16/May/2025 08:59:41] "GET /health HTTP/1.1" 200 -
