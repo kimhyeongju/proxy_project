@@ -68,6 +68,8 @@ $ docker-compose -f docker-compose.prod.yml ps
 ```bash
 $ curl http://localhost:5000/health
 {"model_loaded":true,"status":"healthy"}
+
+$ ./check_status.sh
 ```
 
 ## 📃 로그 확인
