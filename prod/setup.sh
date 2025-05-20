@@ -77,7 +77,7 @@ setup_directories() {
 
 # 함수: 모델 파일 확인
 check_model_file() {
-    MODEL_PATH="$HOME/url_classifier/model/catboost_url_model.cbm"
+    MODEL_PATH="$BASE_DIR/model/catboost_url_model.cbm"
     
     if [ -f "$MODEL_PATH" ]; then
         print_success "모델 파일이 존재합니다: $MODEL_PATH"
@@ -90,7 +90,7 @@ check_model_file() {
 
 # 함수: Docker Compose 파일 생성
 create_docker_compose_file() {
-    COMPOSE_PATH="$HOME/url_classifier/docker-compose.yml"
+    COMPOSE_PATH="$BASE_DIR/docker-compose.prod.yml"
     
     # 호스트 IP 주소 가져오기
     HOST_IP=$(hostname -I | awk '{print $1}')
@@ -152,12 +152,13 @@ EOF
 
 # 함수: 상태 확인 스크립트 생성
 create_status_check_script() {
-    STATUS_SCRIPT_PATH="$HOME/url_classifier/check_status.sh"
+    STATUS_SCRIPT_PATH="$BASE_DIR/check_status.sh"
     
     cat > "$STATUS_SCRIPT_PATH" << 'EOF'
 #!/bin/bash
 
 echo -e "\n=== URL Blocker 서비스 상태 ===\n"
+
 
 # 컨테이너 상태 확인
 echo "컨테이너 상태:"
@@ -254,14 +255,14 @@ main() {
     # 다음 단계 안내
     echo ""
     print_info "다음 단계:"
-    echo "1. 모델 파일이 없는 경우 ~/url_classifier/model/ 디렉토리에 모델 파일을 복사하세요."
-    echo "huggingface!!"
+    echo "1. huggingface에서 모델을 다운 받아서 ./model/ 디렉토리에 저장하세요"
+    echo "wget https://huggingface.co/userzhu/URL_classifier/resolve/main/catboost_url_model.cbm"
     echo ""
     echo "2. Docker Compose로 컨테이너를 시작하세요."
-    echo "   명령어: cd ~/url_classifier && sudo docker-compose up -d"
+    echo "sudo docker-compose -f docker-compose-prod.yml up -d"
     echo ""
     echo "3. 서비스 상태를 확인하세요."
-    echo "   명령어: sudo ~/url_classifier/check_status.sh"
+    echo "./check_status.sh"
 }
 
 # 스크립트 실행
