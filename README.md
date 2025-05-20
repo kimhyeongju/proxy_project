@@ -4,10 +4,10 @@
 
 ## ❓ 개요  
 - **개발 환경** :   Ubuntu 18.04
-- **프록시 서버 IP** : 192.168.100.134
-- **Python 버전** : 3.10 (conda 가상 환경 사용)
-- **Docker 버전** : 24.0.2
-- **Working directory** : /home/khj/url_classifier
+- **프록시 서버 IP** : `$ ip addr show ens33`
+- **Python 버전** : v3.10 (conda 가상 환경 사용)
+- **Docker 버전** : v24.0.2
+- **Docker-compose 버전** : v2.18.1
 - **모델 파일 이름** : catboost_url_model.cbm
 <br>
 
@@ -44,7 +44,7 @@ $ systemctl status docker.service
 ## 📂 디렉터리 생성 및 prod 도커 컴포즈 파일 생성
 ```bash
 $ git clone https://github.com/kimhyeongju/proxy_project.git
-$ cd proxy_project/
+$ cd proxy_project/prod/
 $ ./setup.sh
 ```
 <br>
@@ -60,6 +60,7 @@ $ wget https://huggingface.co/userzhu/URL_classifier/resolve/main/catboost_url_m
 ```bash
 $ cd ..
 $ docker-compose -f docker-compose.prod.yml up -d
+#확인
 $ docker-compose -f docker-compose.prod.yml ps
 ```
 <br>
